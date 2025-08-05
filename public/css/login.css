@@ -1,0 +1,146 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.left {
+    background-color: #1E2939;
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-circle {
+    background: white;
+    border-radius:100%;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+}
+
+
+.logo-login{
+    width: 160px;
+    height: auto;
+    display: block;
+    /* margin: 0 auto; */
+    /* margin-top: 30px; */
+}
+.welcome-msg {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 5px
+}
+.welcome-sub {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.btn-signup {
+    background: white;
+    color: #333;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 12px 40px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.right {
+    background: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.sign-in-title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.social-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    user-select: none;
+}
+.or-text {
+    font-size: 12px;
+    font-weight: 550;
+    color: #333;
+    margin-bottom: 10px;
+}
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+label {
+    font-weight: bold;
+    font-size: 14px;
+    /* margin-bottom: 1px; */
+}
+input[type="text"], input[type="password"] {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #1E2939;
+}
+
+input[type="text"], input[type="password"] {
+    border-color: black;
+}
+
+.btn-login {
+    background: white;
+    color: #333;
+    border: 1px solid #333;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-login:hover {
+    background-color: #1E2939;
+    color: white;
+    border-color: #1E2939;
+}
+.error-messages {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
