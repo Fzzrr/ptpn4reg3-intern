@@ -17,57 +17,6 @@
     <div class="p-4 sm:ml-64">
         <div class="flex flex-col ">
             <div class="relative overflow-x-auto sm:rounded-lg mt-15  ">
-                <form class="max-w-lg mb-5">
-                    <div class="flex">
-                        <label for="search-dropdown"
-                            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
-                        <button id="dropdown-button" data-dropdown-toggle="dropdown"
-                            class="shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white dark:border-gray-600"
-                            type="button">Pilih Jabatan <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
-                        <div id="dropdown"
-                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-35 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdown-button">
-                                <li>
-                                    <button type="button"
-                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Unit/Asisten</button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Manager</button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">General
-                                        Manager</button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Region
-                                        Head</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="relative w-full">
-                            <input type="search" id="search-dropdown"
-                                class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
-                                placeholder="Cari Akun Pengguna" required />
-                            <button type="submit"
-                                class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white dark:bg-gray-700 rounded-e-lg ">
-                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                </svg>
-                                <span class="sr-only">Search</span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
                 <!-- Tombol buka modal -->
                 <button id="openModalBtn"
                     class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none "
@@ -78,7 +27,7 @@
             <div class=" overflow-x-auto">
                 <div class="min-w-full inline-block align-middle">
                     <div class="overflow-hidden ">
-                        <table class=" min-w-full rounded-xl">
+                        <table class=" w-full rounded-xl">
                             <thead>
                                 <tr class="bg-gray-50">
                                     <th scope="col"
@@ -104,7 +53,7 @@
                                             {{ $usr->level }}</td>
                                         <td class="p-5 whitespace-nowrap text-center leading-6 font-medium text-gray-900">
                                             {{ $usr->namaunit }}</td>
-                                        <td class=" p-5 items-center">
+                                        <td class=" p-5 items-center justify-items-center">
                                             <div class="flex items-center gap-1">
                                                 <button
                                                     class="p-2 rounded-full group transition-all duration-500 flex item-center"

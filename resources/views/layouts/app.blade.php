@@ -31,7 +31,7 @@
                         <img src="{{ asset('images/logo.png') }}" class="h-8 me-3" alt="Logo PTPN" />
                         <span
                             class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-white">PTPN
-                            IV Regional III - Pembelian</span>
+                            IV Regional III</span>
                         </span>
                     </a>
                 </div>
@@ -42,7 +42,7 @@
                                 class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                                 aria-expanded="false" data-dropdown-toggle="dropdown-user">
                                 <span class="sr-only">Open user menu</span>
-                                <img class="w-8 h-8 rounded-full bg-white" src="images/profile_logo.png"
+                                <img class="w-8 h-8 rounded-full bg-white" src="{{ asset('images/profile_logo.png') }}"
                                     alt="user photo">
                             </button>
                         </div>

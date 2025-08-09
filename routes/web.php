@@ -47,6 +47,15 @@ Route::get('/progress', [AdminController::class, 'progress'])->name('progress');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/buy', [PembelianController::class, 'buy'])->name('buy');
-    Route::get('/pembelian/tambah', [PembelianController::class, 'create'])->name('pembelian.create');
-    Route::post('/pembelian/store', [PembelianController::class, 'store'])->name('pembelian.store');
+
+    Route::get('/pembelian/tambah', [PembelianController::class, 'create'])
+        ->name('pembelian.create');
+
+    Route::post('/pembelian/store', [PembelianController::class, 'store'])
+        ->name('pembelian.store');
+
+    // Route delete dengan model binding
+    Route::resource('pembelian', PembelianController::class);
+    Route::delete('pembelian/{pembelian}', [PembelianController::class, 'destroy'])
+        ->name('pembelian.destroy');
 });
